@@ -16,8 +16,12 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //create a variable of the type Vector3 named newPos
+        //set newPos to our current position
         Vector3 newPos = transform.position;
 
+        //when the player presses an arrow key
+        //set the x or y to change 
         if(Input.GetKey(KeyCode.UpArrow))
         {
             newPos.y += Time.deltaTime * moveSpeed;
@@ -35,6 +39,7 @@ public class PlayerMove : MonoBehaviour
             newPos.x += Time.deltaTime * moveSpeed;
         }
 
+        //set our position to our new position
         transform.position = newPos;
     }
 }

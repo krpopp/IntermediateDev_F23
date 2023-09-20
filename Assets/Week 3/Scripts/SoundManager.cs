@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-
+    //audio clips are just sound files
     public AudioClip armSound;
 
+    //audio source is the component that plays the sound files
     public AudioSource myAudioSource;
 
     // Start is called before the first frame update
